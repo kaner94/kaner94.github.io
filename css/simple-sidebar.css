@@ -5,6 +5,8 @@
  */
 
 /* Toggle Styles */
+
+
 .infoTable {
     margin:0px;padding:0px;
     width:100%;
@@ -72,6 +74,12 @@
 }.infoTable tr:last-child td:last-child{
     border-width:0px 0px 0px 0px;
 }
+
+body {
+    background: url('bg4.jpg');
+    background-position: 25% 10%;
+}
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -93,7 +101,7 @@
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #233;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -103,6 +111,8 @@
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
+
+
 
 #page-content-wrapper {
     width: 100%;
