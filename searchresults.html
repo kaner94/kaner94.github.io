@@ -10,19 +10,17 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <title>Pass It On | Trade</title>
+    <script src="password.js"></script>
+    <title>Pass It On | Search Results</title>
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
     <div id="wrapper">
@@ -59,12 +57,35 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                        <h1>Trade</h1>
+                        <h1>Search</h1>
                         <div class="infoTable">
+
+
+
+
+                        <!--I MADE 3 TABLES TO TRY MAKE IT LOOK LIKE THE ADVERTS RESULTS PAGE, WHERE THEY HAVE A SEARCH BAR ON TOP, LOCATION DROPDOWN DOWN ON THE LEFT, AND THE ACTUAL RESULTS DOWN ON THE RIGHT-->
+
+                        <!--layout
+
+                        [Search again table________________________________________]
+
+                        [Select location table  |      [ Results Table
+                                                |
+                                                |
+                                                |
+                                                |
+                                                |
+                                                |
+                                                |
+                                                |
+                                                |                                       ]
+
+                        -->
+                            <!--make new search table-->
                             <table>
                                 <tr>
                                     <td>
-                                        <p><strong>Buy</strong></p>
+                                        <p><strong>Search</strong></p>
                                         <form>
                                              <!--dropdown menu for categories-->
                                             <div class="dropdown">
@@ -77,6 +98,11 @@
                                                     <li><a href="#">Bathroom</a></li>
                                                 </ul>
                                             </div>
+                                        </form>
+                                    </td>
+
+                                    <td>
+                                        <form>
                                             <!--Search Bar-->
                                             <!--CSS To edit search bar dimensions!-->
                                             <div class="form-group">
@@ -85,19 +111,87 @@
                                                     <input class="form-control" placeholder="Search in ads..." name="search" type="text" />
                                                 </div>
                                             </div>
-                                            <!--Search Button-->
-                                            <button type="submit" class="btn btn-primary"><a href="searchresults.html">Search</a></button>
                                         </form>
                                     </td>
+
                                     <td>
-                                        <p><strong>Sell</strong></p>
                                         <form>
-                                            <!--PlaceAd Button-->
-                                            <a href="placead.html"><button type="submit" class="btn btn-primary">Place Ad</button></a>
+                                            <!--Search Button-->
+                                            <button type="submit" class="btn btn-primary">Search</button>
                                         </form>
                                     </td>
                                 </tr>
                             </table>
+
+
+
+                            <!--select the location you want to buy from-->
+                            <table>
+                                <tr>
+                                    <td>
+                                        <form>                                    
+                                            
+                                            <div class="dropdown">
+                                                <button class="btn btn-primary dropdown-toggle" id ="locationDropdown" type="button" data-toggle="dropdown">Location 
+                                                <span class="caret"></span></button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Dublin</a></li>
+                                                    <li><a href="#">Galway</a></li>
+                                                    <li><a href="#">Cork</a></li>
+                                                    <li><a href="#">Limerick</a></li>
+                                                </ul>
+                                            </div>
+                                        </form>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                            <!--results table layout for each item
+                                                    |
+                              Title                 |       Price
+                            ________________________|___________________________
+                                                    |
+                            Picture                 |       Description
+                                                    |
+                                                    |
+                                                    |
+                                                    |
+                            -->
+
+
+                            <!--results table-->
+                            <table>
+                                <tr>
+                                    <td>
+                                    <!-- Title-->
+                                        
+                                    </td>
+                                    <td>
+                                    <!-- Price-->
+                                        
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <!-- Image-->
+                                    
+
+
+
+                                    </td>
+                                    <td>
+                                    <!-- Description-->
+
+
+
+                                    </td>
+                                </tr>
+                            </table>
+
+
                         </div>
                     </div>
                 </div>
@@ -115,24 +209,6 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-    </script>
-
-    <!-- when category selected, go to that page-->
-    <script>
-
-
-    </script>
-
-    <!-- place ad button-->
-    <script>
-        
-
-    </script>
-
-    <!-- enter text and search-->
-    <script>
-        
-
     </script>
         
 </body>

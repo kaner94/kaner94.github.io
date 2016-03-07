@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <title>Pass It On | Trade</title>
+    <script src="password.js"></script>
+    <title>Pass It On | Profile</title>
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,18 +34,18 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="index.html">
+                    <a href="/index.html">
                         <strong><i class="fa fa-home fa-lg"></i> PassItOn</strong>
                     </a>
                 </li>
                 <li>
-                    <a href="trade.html"><i class="fa fa-money fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trade</a>
+                    <a href="/trade.html"><i class="fa fa-money fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trade</a>
                 </li>
                 <li>
-                    <a href="aboutus.html"><i class="fa fa-info fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us</a>
+                    <a href="/aboutus.html"><i class="fa fa-info fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us</a>
                 </li>
                 <li>
-                    <a href="contactus.html"><i class="fa fa-envelope fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</a>
+                    <a href="/contactus.html"><i class="fa fa-envelope fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</a>
                 </li>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <li>
@@ -59,45 +63,37 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                        <h1>Trade</h1>
+                        <h1>Profile</h1>
                         <div class="infoTable">
+
+                            <!--My Details Table-->
                             <table>
-                                <tr>
+                                <tr>                                 
                                     <td>
-                                        <p><strong>Buy</strong></p>
-                                        <form>
-                                             <!--dropdown menu for categories-->
-                                            <div class="dropdown">
-                                                <button class="btn btn-primary dropdown-toggle" id ="categoryDropdown" type="button" data-toggle="dropdown">Browse Categories 
-                                                <span class="caret"></span></button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">Kitchen</a></li>
-                                                    <li><a href="#">Living Room</a></li>
-                                                    <li><a href="#">Bedroom</a></li>
-                                                    <li><a href="#">Bathroom</a></li>
-                                                </ul>
-                                            </div>
-                                            <!--Search Bar-->
-                                            <!--CSS To edit search bar dimensions!-->
-                                            <div class="form-group">
-                                                <label class="control-label" for="search"></label>
-                                                <div class="input-group">
-                                                    <input class="form-control" placeholder="Search in ads..." name="search" type="text" />
-                                                </div>
-                                            </div>
-                                            <!--Search Button-->
-                                            <button type="submit" class="btn btn-primary"><a href="searchresults.html">Search</a></button>
-                                        </form>
+                                        <h3> <center><strong> My Details </strong></center></h3>
+                                        <p><strong>Name: </strong><!--code for users name--></p>
+                                        <p><strong>e-mail:</strong> <!--code for users email--></p>
+                                        <p> <strong>Phone Number: </strong><!--code for users phone number--></p>                                       
+                                        <a> 
+                                            <strong>Change Password</strong>
+                                        </a>                                   
+
                                     </td>
+
+                                    
+
                                     <td>
-                                        <p><strong>Sell</strong></p>
-                                        <form>
-                                            <!--PlaceAd Button-->
-                                            <a href="placead.html"><button type="submit" class="btn btn-primary">Place Ad</button></a>
-                                        </form>
+                                        <h3> <strong><center> My Ads </center></strong></h3>
+                                        <a> <!--link to active ads-->
+                                            <strong> Active </strong> 
+                                        </a>
+
                                     </td>
+
                                 </tr>
+
                             </table>
+      
                         </div>
                     </div>
                 </div>
@@ -115,24 +111,6 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-    </script>
-
-    <!-- when category selected, go to that page-->
-    <script>
-
-
-    </script>
-
-    <!-- place ad button-->
-    <script>
-        
-
-    </script>
-
-    <!-- enter text and search-->
-    <script>
-        
-
     </script>
         
 </body>
